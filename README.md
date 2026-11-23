@@ -1,6 +1,6 @@
 # Classificação dos resultados do Santa Cruz (2015–2025)
 
-É possível distinguir vitórias, empates e derrotas do Santa Cruz antes de a bola rolar? Neste projeto da disciplina de **Inteligência Artificial da UABJ–UFRPE**, comparamos seis classificadores usando informações disponíveis antes do jogo, como mando de campo, adversário e competição. O placar serve apenas para conferir o resultado de cada partida.
+É possível distinguir vitórias, empates e derrotas do Santa Cruz antes de a bola rolar? Neste projeto comparamos seis classificadores usando informações disponíveis antes do jogo, como mando de campo, adversário e competição. O placar serve apenas para conferir o resultado de cada partida.
 
 [Artigo em PDF](Artigo_Santa_Cruz.pdf) · [Notebook no Google Colab](https://colab.research.google.com/github/GabrielRenanPE/Projeto---Entrega-Final-IA/blob/main/Experimento_Santa_Cruz.ipynb) · [Dataset no Kaggle](https://www.kaggle.com/datasets/gabrielrenanpe/dados-do-time-santa-cruz-futebol-clube-2015-2025)
 
