@@ -4,44 +4,6 @@
 
 [Artigo em PDF](Artigo_Santa_Cruz.pdf) · [Notebook no Google Colab](https://colab.research.google.com/github/GabrielRenanPE/Projeto---Entrega-Final-IA/blob/main/Experimento_Santa_Cruz.ipynb) · [Dataset no Kaggle](https://www.kaggle.com/datasets/gabrielrenanpe/dados-do-time-santa-cruz-futebol-clube-2015-2025)
 
-## Como executar no Linux
-
-Você precisa de Git e Python 3.12 com suporte a ambientes virtuais. A planilha já está no repositório.
-
-**1. Baixe o projeto e entre na pasta.**
-
-```bash
-git clone https://github.com/GabrielRenanPE/Projeto---Entrega-Final-IA.git
-cd Projeto---Entrega-Final-IA
-```
-
-**2. Crie um ambiente virtual e instale as dependências.**
-
-```bash
-python3.12 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-```
-
-**3. Prepare os dados e execute o experimento.** No repositório, a planilha está na raiz. Copie-a para a pasta que o programa lê e execute os dois scripts em ordem.
-
-```bash
-mkdir -p dados
-cp Dados_Santa.xlsx dados/
-python organizar_planilha.py
-python experimento.py
-```
-
-O primeiro script converte a planilha em `dados/jogos_organizados.csv`. O segundo faz a limpeza, treina os modelos e mostra no terminal as métricas e a matriz de confusão. Se uma janela com um gráfico abrir, feche-a para continuar. Para executar em um terminal sem interface gráfica, use `MPLBACKEND=Agg python experimento.py`.
-
-**4. Confira os resultados.** O programa cria a pasta `resultados/`. Para visualizar no terminal a média e o desvio padrão de cada configuração:
-
-```bash
-cat resultados/resumo.csv
-```
-
-Para repetir o experimento em outro dia, entre na pasta do projeto, ative o ambiente com `source .venv/bin/activate` e execute `python experimento.py`.
-
 ## Como executar no Google Colab
 
 1. Abra o [notebook no Colab](https://colab.research.google.com/github/GabrielRenanPE/Projeto---Entrega-Final-IA/blob/main/Experimento_Santa_Cruz.ipynb).
