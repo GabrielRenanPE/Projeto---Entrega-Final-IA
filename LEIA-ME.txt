@@ -1,0 +1,32 @@
+PROJETO 2ª VA — INTELIGÊNCIA ARTIFICIAL
+UABJ–UFRPE | Prof. Dr. Anderson Pinheiro Cavalcanti
+Gabriel Renan Silva Martins Guimarães, Anthonny Lucas Santos da Silva e Liel dos Santos Rocha
+
+O artigo está em Artigo_Santa_Cruz.pdf. A pasta artigo contém o fonte LaTeX e o estilo SBC.
+
+Google Colab
+Abra Experimento_Santa_Cruz.ipynb no Colab e execute as células em ordem. Quando solicitado, envie o ZIP completo. Se os arquivos já estiverem na pasta do notebook, a etapa de upload é pulada. O notebook contém os resultados da execução usada no artigo.
+
+Execução local
+Descompacte o ZIP, abra um terminal nessa pasta e use Python 3.12.
+1. python -m pip install -r requirements.txt
+2. python organizar_planilha.py
+3. python experimento.py
+O passo 2 recria o CSV organizado a partir do Excel. Notebook e experimento.py são duas formas de executar o mesmo experimento.
+
+Dados
+dados/Dados_Santa.xlsx — planilha original do Kaggle, com abas por ano.
+dados/Dados_Santa_2015_2025_organizado.pdf — anexo da primeira entrega.
+dados/jogos_organizados.csv — tabela de 470 jogos obtida da planilha e conferida com o PDF. A ordem pode variar entre formatos. Os jogos são identificados pela data.
+dados/jogos_processados.csv — 468 jogos após a correção dos campos e a conferência das classes. Contém data de identificação, oito atributos e a classe. O preenchimento de ausências, a escala e a codificação final são ajustados somente no treino de cada fold.
+
+Resultados
+metricas_por_fold.csv — quatro métricas nas 180 avaliações dos modelos e nas dez avaliações da referência.
+resumo.csv — média e desvio padrão amostral por configuração. As métricas nos CSVs usam a escala de 0 a 1.
+previsoes.csv — data, classe real, classe prevista e fold de cada previsão.
+media_geral.csv — resumo da média das 18 configurações por fold.
+efeito_do_mando.csv e efeito_da_escala.csv — testes complementares com regressão logística e KNN.
+mando.pdf e comparacao.pdf — gráficos usados no artigo.
+
+Fonte da planilha
+https://www.kaggle.com/datasets/gabrielrenanpe/dados-do-time-santa-cruz-futebol-clube-2015-2025
