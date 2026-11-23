@@ -14,6 +14,7 @@ python -m pip install -r requirements.txt
 python organizar_planilha.py
 python experimento.py
 As bases original e pré-processada ficam em dados/. As métricas por fold, as previsões e os gráficos ficam em resultados/. [Artigo em PDF](Artigo_Santa_Cruz.pdf)
+
 Equipe
 Gabriel Renan Silva Martins Guimarães, Anthonny Lucas Santos da Silva e Eliel dos Santos Rocha.
 
